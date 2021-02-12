@@ -5,7 +5,7 @@ Public Sub Alahuz()
   Dim Str As String
   On Error Resume Next
   ThisDrawing.SelectionSets("ALAHUZAS").Delete
-  Set ss = ThisDrawing.SelectionSets.Add("FZALAHUZAS")
+  Set ss = ThisDrawing.SelectionSets.Add("ALAHUZAS")
   ThisDrawing.Utility.Prompt "Válassz aláhúzandó feliratokat" & vbCrLf
   ss.SelectOnScreen
   For Each obj In ss
